@@ -1,6 +1,6 @@
 package com.code.gym;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Colorable {
     public Square() {
     }
 
@@ -37,5 +37,9 @@ public class Square extends Rectangle {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+    @Override
+    public void howtocolor() {
+        System.out.println("Color all four side.");
     }
 }
